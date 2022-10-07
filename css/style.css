@@ -1,10 +1,14 @@
 /* Normalize.css */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+/* Police Raleway */
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand);
+/* Police Roboto */
+@import url(https://fonts.googleapis.com/css2?family=Roboto);
 body {
   box-sizing: border-box;
 }
 
-p {
+body {
   font-family: "Roboto", sans-serif;
 }
 
