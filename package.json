@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Troisième projet du parcours Openclassrooms : Développeur d'application Javascript/React",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qhart/ohmyfood.git"
+  },
+  "author": "qhart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qhart/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/qhart/ohmyfood#readme"
+}
