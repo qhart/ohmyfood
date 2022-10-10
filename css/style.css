@@ -17,22 +17,29 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
+p {
+  font-size: 14px;
+}
+
 .header {
   background: white;
   display: flex;
   justify-content: center;
   width: 100%;
-  box-shadow: #969393 0px 0.2px 5px 0px;
+  box-shadow: #969393 0px 5px 5px -5px;
+  position: relative;
+  z-index: 10;
 }
 .header__logo {
-  margin: 0;
-  padding-top: 20px;
+  margin: 5px;
+  padding-top: 15px;
+  font-size: 2em;
 }
 
 .footer {
   background: #353535;
   padding: 20px;
-  font-size: 15px;
+  font-size: 14px;
 }
 .footer__title, .footer__list a {
   color: white;
@@ -50,7 +57,7 @@ h1, h2, h3 {
   text-decoration: none;
 }
 .footer__list li {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .footer .withicon {
   display: flex;
@@ -60,8 +67,19 @@ h1, h2, h3 {
   margin-left: 10px;
 }
 .footer .withicon > i {
-  width: 20px;
+  width: 15px;
   color: white;
+}
+
+.location {
+  background: #EAEAEA;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding-right: 55px;
+}
+.location p {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

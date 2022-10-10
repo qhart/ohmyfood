@@ -1,7 +1,7 @@
 .footer {
     background: $colour-dark-grey;
     padding: 20px;
-    font-size: 15px;
+    font-size: 14px;
 
     &__title, &__list a {
         color: white;
@@ -22,20 +22,20 @@
         }
 
         li {
-            margin-top: 5px;
+            margin-top: 10px;
         }
     }
 
     .withicon {
         display: flex;
         align-items: center;
-        
+
         &__link {
             margin-left: 10px;
         }
 
         > i {
-            width: 20px;
+            width: 15px;
             color: white;
         }
     }

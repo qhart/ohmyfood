@@ -1,0 +1,10 @@
+.location {
+    background: $colour-light-grey;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-right: 55px;
+    p {
+        margin-left: 15px;
+    }
+}
