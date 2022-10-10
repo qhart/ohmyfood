@@ -1,6 +1,11 @@
 .footer {
     background: $colour-dark-grey;
     padding: 20px;
+    font-size: 15px;
+
+    &__title, &__list a {
+        color: white;
+    }
 
     &__title {
         margin-top: 0;
@@ -11,21 +16,27 @@
         flex-direction: column;
         padding: 0;
         list-style-type: none;
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            margin-top: 5px;
+        }
     }
 
-    &__list a {
-        text-decoration: none;
-        text-align: justify;
-    }
-
-    &__title, &__list a {
-        color: white;
-    }
-
-    .row {
+    .withicon {
         display: flex;
+        align-items: center;
+        
         &__link {
             margin-left: 10px;
+        }
+
+        > i {
+            width: 20px;
+            color: white;
         }
     }
 }
