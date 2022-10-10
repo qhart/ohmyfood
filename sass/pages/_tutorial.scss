@@ -1,0 +1,45 @@
+.tutorial {
+    &__title {
+        padding: 20px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin-top: 0;
+
+        &__element {
+            display: flex;
+            align-items: center;
+            border-radius: 20px 20px 20px 20px;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: $colour-grey 0px 5px 5px -2px;
+
+            &--purple {
+                background: lighten($colour-primary, 35%);
+
+                > i {
+                    color: $colour-primary;
+                }
+            }
+            &--grey {
+                background: $colour-lighter-grey;
+            }
+
+            i, p {
+                margin-left: 20px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+    
+
+
+
+
+    
+}
