@@ -17,10 +17,6 @@ h1, h3 {
   font-weight: normal;
 }
 
-p {
-  font-size: 14px;
-}
-
 .header {
   background: white;
   display: flex;
@@ -73,6 +69,25 @@ p {
 
 .presentation {
   background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.presentation__title {
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 15px;
+}
+.presentation__text {
+  margin-top: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.presentation__button {
+  margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .location {
