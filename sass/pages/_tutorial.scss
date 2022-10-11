@@ -7,9 +7,10 @@
     &__list {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 85%;
         margin: auto;
         padding: 0;
+        margin-bottom: 40px;
 
         &__element {
             display: flex;
@@ -17,7 +18,8 @@
             border-radius: 20px;
             padding: 10px;
             margin-bottom: 20px;
-            box-shadow: $colour-grey 0px 5px 5px -2px;
+            margin-left: 10px;
+            box-shadow: 0px 5px 10px -10px;
             position: relative;
             counter-increment: css-counter 1;
             
@@ -39,7 +41,7 @@
             }
 
             &--purple {
-                background: lighten($colour-primary, 35%);
+                background: lighten($colour-primary, 36%);
 
                 > i {
                     color: $colour-primary;

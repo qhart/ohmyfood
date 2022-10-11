@@ -21,13 +21,43 @@ h3 {
 }
 
 .cards {
-  border: 1px solid black;
   width: 90%;
+  margin-top: 20px;
 }
-.cards__imgcontainer > img {
+.cards > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+.cards__container {
+  margin: auto;
   width: 100%;
-  height: 150px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 5px 10px -10px;
+  border-radius: 20px 20px 20px 20px;
+}
+.cards__container__img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 180px;
   object-fit: cover;
+}
+.cards__container > figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards__container__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.cards__container__text > h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.cards__container__text > p {
+  margin-top: 5px;
 }
 
 .header {
@@ -109,9 +139,10 @@ h3 {
 .tutorial__list {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 85%;
   margin: auto;
   padding: 0;
+  margin-bottom: 40px;
 }
 .tutorial__list__element {
   display: flex;
@@ -119,7 +150,8 @@ h3 {
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 20px;
-  box-shadow: #969393 0px 5px 5px -2px;
+  margin-left: 10px;
+  box-shadow: 0px 5px 10px -10px;
   position: relative;
   counter-increment: css-counter 1;
 }
@@ -139,7 +171,7 @@ h3 {
   font-size: 14px;
 }
 .tutorial__list__element--purple {
-  background: #f2eafb;
+  background: #f4eefc;
 }
 .tutorial__list__element--purple > i {
   color: #9356DC;
@@ -157,9 +189,10 @@ h3 {
   display: flex;
   flex-direction: column;
   background: #F6F6F6;
+  margin-bottom: 50px;
 }
 .restaurants__title {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 20px;
 }
 .restaurants__cards {
@@ -173,7 +206,7 @@ h3 {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  padding-right: 55px;
+  padding-right: 40px;
 }
 .location p {
   margin-left: 15px;
