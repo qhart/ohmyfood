@@ -20,6 +20,15 @@ h3 {
   font-weight: normal;
 }
 
+.purple-button {
+  border: 0px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px -10px;
+  background: linear-gradient(360deg, #9356DC, #FF79DA);
+  padding: 15px;
+  color: white;
+}
+
 .cards {
   width: 90%;
   margin-top: 20px;
