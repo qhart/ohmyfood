@@ -14,6 +14,9 @@ body {
 
 h1, h3 {
   font-family: "Shrikhand", sans-serif;
+}
+
+h3 {
   font-weight: normal;
 }
 
@@ -103,10 +106,27 @@ h1, h3 {
 .tutorial__list__element {
   display: flex;
   align-items: center;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
   padding: 10px;
   margin-bottom: 20px;
   box-shadow: #969393 0px 5px 5px -2px;
+  position: relative;
+  counter-increment: css-counter 1;
+}
+.tutorial__list__element:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: counter(css-counter) "";
+  border: 1px solid #9356DC;
+  color: white;
+  background: #9356DC;
+  position: absolute;
+  margin-left: -20px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  font-size: 14px;
 }
 .tutorial__list__element--purple {
   background: #f2eafb;
