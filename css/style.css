@@ -20,6 +20,16 @@ h3 {
   font-weight: normal;
 }
 
+.cards {
+  border: 1px solid black;
+  width: 90%;
+}
+.cards__imgcontainer > img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
 .header {
   background: white;
   display: flex;
@@ -144,11 +154,18 @@ h3 {
 }
 
 .restaurants {
+  display: flex;
+  flex-direction: column;
   background: #F6F6F6;
 }
 .restaurants__title {
   padding-top: 40px;
   padding-left: 20px;
+}
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .location {
