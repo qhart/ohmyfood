@@ -99,9 +99,9 @@ h3 {
 .tutorial__list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 80%;
-  margin-top: 0;
+  margin: auto;
+  padding: 0;
 }
 .tutorial__list__element {
   display: flex;
@@ -141,6 +141,14 @@ h3 {
   margin-left: 20px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.restaurants {
+  background: #F6F6F6;
+}
+.restaurants__title {
+  padding-top: 40px;
+  padding-left: 20px;
 }
 
 .location {
