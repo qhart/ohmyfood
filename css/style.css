@@ -22,7 +22,7 @@ h3 {
 
 .purple-button {
   border: 0px;
-  border-radius: 30px;
+  border-radius: 20px 20px 20px 20px;
   box-shadow: black 0px 5px 5px -5px;
   background: linear-gradient(360deg, #9356DC, #FF79DA);
   width: 220px;
