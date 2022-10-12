@@ -11,6 +11,10 @@
         margin: auto;
         padding: 0;
         margin-bottom: 40px;
+        @include display ("tablet") {
+            flex-direction: row;
+            width: 30%;
+        }
 
         &__element {
             display: flex;
