@@ -1,14 +1,16 @@
 .header {
     background: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     box-shadow: $colour-grey 0px 5px 5px -5px;
     position: relative;
-    z-index: 10;
+    z-index: 1;
     &__logo {
-        margin: 5px;
+        margin: 5px auto;
         padding-top: 15px;
         font-size: 2em;
+    }
+    &__back {
     }
 }
