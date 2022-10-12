@@ -25,6 +25,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            > .fa-with-bg {
+                margin-right: 20px;
+                margin-bottom: 10px;
+                &:hover {
+                    &:before {
+                        background: linear-gradient(360deg, $colour-primary, $colour-secondary);
+                    }
+                }
+            }
         }
 
         &__text {
