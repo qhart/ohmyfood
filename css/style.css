@@ -181,13 +181,12 @@ h3 {
   align-items: center;
   justify-content: center;
   content: counter(css-counter) "";
-  border: 1px solid #9356DC;
   color: white;
   background: #9356DC;
   position: absolute;
   margin-left: -20px;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   font-size: 14px;
 }
