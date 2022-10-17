@@ -98,6 +98,7 @@ h3 {
 }
 .cards__container .heart-full:hover {
   background: linear-gradient(360deg, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
 }
 .cards__container__text {
