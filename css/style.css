@@ -86,12 +86,19 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-.cards__container > figcaption > .fa-with-bg {
-  margin-right: 20px;
+.cards__container .fa-stack {
+  margin-right: 10px;
   margin-bottom: 10px;
 }
-.cards__container > figcaption > .fa-with-bg:hover:before {
-  background: linear-gradient(360deg, #9356DC, #FF79DA);
+.cards__container .fa-heart {
+  font-size: 25px;
+}
+.cards__container .heart-full {
+  color: transparent;
+}
+.cards__container .heart-full:hover {
+  background: linear-gradient(360deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
 }
 .cards__container__text {
   display: flex;
