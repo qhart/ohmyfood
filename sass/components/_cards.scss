@@ -8,7 +8,6 @@
         width: 22%;
     }
 
-
     > a {
         text-decoration: none;
         cursor: pointer;
@@ -61,6 +60,7 @@
             color: transparent;
             &:hover {
                 background: linear-gradient(360deg, $colour-secondary, $colour-primary);
+                background-clip: text;
                 -webkit-background-clip: text;
             }
         }
