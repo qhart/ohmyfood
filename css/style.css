@@ -105,22 +105,41 @@ h3 {
 
 .dish {
   display: flex;
+  justify-content: space-between;
   margin-top: 15px;
   width: 90%;
-  flex-direction: column;
   background: white;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 5px 10px -10px;
+  cursor: pointer;
 }
-.dish__title {
+.dish:hover .check {
+  width: 20%;
+}
+.dish__container {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  width: 100%;
+}
+.dish__container__title {
   margin-left: 0;
 }
-.dish__text {
+.dish__container__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+.dish__container__text > p {
+  text-overflow: ellipsis;
+}
+.dish .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  background-color: red;
+}
 .fa-heart {
   font-size: 25px;
 }
