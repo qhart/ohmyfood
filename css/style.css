@@ -12,7 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h3 {
+h1, h2, h3 {
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -90,17 +90,6 @@ h3 {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.cards__container .fa-heart {
-  font-size: 25px;
-}
-.cards__container .heart-full {
-  color: transparent;
-}
-.cards__container .heart-full:hover {
-  background: linear-gradient(360deg, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
 .cards__container__text {
   display: flex;
   flex-direction: column;
@@ -112,6 +101,37 @@ h3 {
 }
 .cards__container__text > p {
   margin-top: 5px;
+}
+
+.dish {
+  display: flex;
+  margin-top: 15px;
+  width: 90%;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 5px 10px -10px;
+}
+.dish__title {
+  margin-left: 0;
+}
+.dish__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-heart {
+  font-size: 25px;
+}
+
+.heart-full {
+  color: transparent;
+}
+.heart-full:hover {
+  background: linear-gradient(360deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .header {
@@ -185,6 +205,7 @@ h3 {
   padding-left: 60px;
   padding-right: 60px;
   margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
 }
 .presentation__text {
   margin-top: 0;
@@ -198,6 +219,7 @@ h3 {
 
 .tutorial__title {
   padding: 20px;
+  font-family: "Roboto", sans-serif;
 }
 .tutorial__list {
   display: flex;
@@ -265,6 +287,7 @@ h3 {
   padding-bottom: 50px;
 }
 .restaurants__title {
+  font-family: "Roboto", sans-serif;
   padding-top: 20px;
   padding-left: 20px;
 }
@@ -288,20 +311,34 @@ h3 {
 }
 .menu__wrapper {
   position: relative;
-  margin-top: -40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: -30px;
   background: #F6F6F6;
   border-radius: 30px 30px 0px 0px;
 }
 .menu__wrapper__header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.menu__wrapper__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .menu__wrapper h2 {
-  font-family: "Shrikhand", sans-serif;
   font-weight: normal;
+}
+.menu__wrapper h3 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+}
+.menu__wrapper .purple-button {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .location {

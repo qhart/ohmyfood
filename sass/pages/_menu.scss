@@ -4,21 +4,46 @@
         height: 180px;
         object-fit: cover;
     }
+
     &__wrapper {
+
         position: relative;
-        margin-top: -40px;
-        &__header {
-            display: flex;
-        }
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        margin-top: -30px;
         background: $colour-lighter-grey;
         border-radius: 30px 30px 0px 0px;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .fa-stack {
+        }
+
+        &__content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
         h2 {
-            font-family: 'Shrikhand', sans-serif;
             font-weight: normal;
+            
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            margin-left: 20px;
+        }
+
+        .purple-button {
+            margin-top: 30px;
+            margin-bottom: 50px;
         }
     }
 }
