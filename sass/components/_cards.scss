@@ -52,19 +52,6 @@
             margin-bottom: 10px;
         }
 
-        .fa-heart {
-            font-size: 25px;
-        }
-        
-        .heart-full {
-            color: transparent;
-            &:hover {
-                background: linear-gradient(360deg, $colour-secondary, $colour-primary);
-                background-clip: text;
-                -webkit-background-clip: text;
-            }
-        }
-
         &__text {
             display: flex;
             flex-direction: column;
