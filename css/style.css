@@ -112,34 +112,54 @@ h3 {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 5px 10px -10px;
   cursor: pointer;
+  position: relative;
 }
 .dish:hover .check {
-  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #99E2D0;
+  font-size: x-large;
+  width: 80px;
 }
 .dish__container {
   display: flex;
   flex-direction: column;
-  background-color: green;
   width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: all 500ms;
 }
 .dish__container__title {
-  margin-left: 0;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.dish__container__title, .dish__container__text > p {
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .dish__container__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.dish__container__text > p {
-  text-overflow: ellipsis;
+.dish__container__text > strong, .dish__container__text p {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.dish__container__text > strong {
+  margin-left: 20px;
+  margin-right: 10px;
 }
 .dish .check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 0%;
-  background-color: red;
+  display: none;
 }
+
 .fa-heart {
   font-size: 25px;
 }
