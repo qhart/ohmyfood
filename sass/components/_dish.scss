@@ -19,7 +19,12 @@
             background-color: $colour-tertiary;
             font-size: x-large;
             width: 80px;
-
+            opacity: 1;
+            transform: scaleX(1);
+            transform-origin: 100% 50%;
+            & > i {
+                transform: rotate(0deg);
+            }
         }
     }
 
@@ -50,12 +55,12 @@
             justify-content: space-between;
             align-items: center;
 
-            > strong, p {
+            & > strong, p {
                 margin-top: 5px;
                 margin-bottom: 15px;
             }
 
-            > strong {
+            & > strong {
                 margin-left: 20px;
                 margin-right: 10px;
             }
@@ -63,9 +68,12 @@
     }
 
     .check {
-        display: none;
+        opacity: 0;
+        transform: scaleX(0);
+        transition: transform 600ms ease-in-out;
+        & > i {
+            transform: rotate(-360deg);
+            transition: transform 600ms ease-in-out;
+        }
     }
-
-
-
 }
