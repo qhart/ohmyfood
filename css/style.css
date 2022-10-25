@@ -112,51 +112,18 @@ h3 {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 5px 10px -10px;
   cursor: pointer;
-  animation: dish-appear 1s ease-in-out;
+  animation: dish-appear 1000ms ease-in-out;
   animation-fill-mode: backwards;
 }
 @keyframes dish-appear {
   0% {
-    transform: translateY(50px);
+    transform: translateY(10px);
     opacity: 0;
   }
   100% {
     transform: translateY(0);
     opacity: 1;
   }
-}
-.dish .dish-delay-0 {
-  animation-delay: 0s;
-}
-.dish .dish-delay-1 {
-  animation-delay: 0.1s;
-}
-.dish .dish-delay-2 {
-  animation-delay: 0.2s;
-}
-.dish .dish-delay-3 {
-  animation-delay: 0.3s;
-}
-.dish .dish-delay-4 {
-  animation-delay: 0.4s;
-}
-.dish .dish-delay-5 {
-  animation-delay: 0.5s;
-}
-.dish .dish-delay-6 {
-  animation-delay: 0.6s;
-}
-.dish .dish-delay-7 {
-  animation-delay: 0.7s;
-}
-.dish .dish-delay-8 {
-  animation-delay: 0.8s;
-}
-.dish .dish-delay-9 {
-  animation-delay: 0.9s;
-}
-.dish .dish-delay-10 {
-  animation-delay: 1s;
 }
 .dish:hover .check {
   display: flex;
@@ -425,37 +392,37 @@ h3 {
   justify-content: space-between;
 }
 .menu__wrapper__content .dish-delay-0 {
-  animation-delay: 0s;
+  animation-delay: 0ms;
 }
 .menu__wrapper__content .dish-delay-1 {
-  animation-delay: 0.2s;
+  animation-delay: 200ms;
 }
 .menu__wrapper__content .dish-delay-2 {
-  animation-delay: 0.4s;
+  animation-delay: 400ms;
 }
 .menu__wrapper__content .dish-delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 600ms;
 }
 .menu__wrapper__content .dish-delay-4 {
-  animation-delay: 0.8s;
+  animation-delay: 800ms;
 }
 .menu__wrapper__content .dish-delay-5 {
-  animation-delay: 1s;
+  animation-delay: 1000ms;
 }
 .menu__wrapper__content .dish-delay-6 {
-  animation-delay: 1.2s;
+  animation-delay: 1200ms;
 }
 .menu__wrapper__content .dish-delay-7 {
-  animation-delay: 1.4s;
+  animation-delay: 1400ms;
 }
 .menu__wrapper__content .dish-delay-8 {
-  animation-delay: 1.6s;
+  animation-delay: 1600ms;
 }
 .menu__wrapper__content .dish-delay-9 {
-  animation-delay: 1.8s;
+  animation-delay: 1800ms;
 }
 .menu__wrapper__content .dish-delay-10 {
-  animation-delay: 2s;
+  animation-delay: 2000ms;
 }
 .menu__wrapper h2 {
   font-weight: normal;
