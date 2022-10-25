@@ -22,7 +22,7 @@ h3 {
 
 .purple-button {
   border: 0px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 30px;
   box-shadow: black 0px 5px 5px -5px;
   background: linear-gradient(360deg, #9356DC, #FF79DA);
   width: 220px;
@@ -386,10 +386,19 @@ h3 {
 .menu__wrapper h3 {
   font-family: "Roboto", sans-serif;
   margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.menu__wrapper .h3-underlined {
+  width: 50px;
+  height: 4px;
+  margin-top: 5px;
+  margin-left: 20px;
+  background-color: #99E2D0;
 }
 .menu__wrapper .purple-button {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .location {

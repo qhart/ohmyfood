@@ -36,11 +36,21 @@
         h3 {
             font-family: 'Roboto', sans-serif;
             margin-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+
+        .h3-underlined {
+            width: 50px;
+            height: 4px;
+            margin-top: 5px;
+            margin-left: 20px;
+            background-color: $colour-tertiary;
         }
 
         .purple-button {
-            margin-top: 30px;
-            margin-bottom: 50px;
+            margin-top: 40px;
+            margin-bottom: 60px;
         }
     }
 }
