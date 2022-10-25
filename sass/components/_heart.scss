@@ -1,9 +1,11 @@
 .fa-heart {
     font-size: 25px;
+    cursor: pointer;
 }
 
 .heart-full {
     color: transparent;
+    transition: all 500ms;
     &:hover {
         background: linear-gradient(360deg, $colour-secondary, $colour-primary);
         background-clip: text;

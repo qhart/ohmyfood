@@ -185,10 +185,12 @@ h3 {
 
 .fa-heart {
   font-size: 25px;
+  cursor: pointer;
 }
 
 .heart-full {
   color: transparent;
+  transition: all 500ms;
 }
 .heart-full:hover {
   background: linear-gradient(360deg, #FF79DA, #9356DC);
@@ -243,14 +245,14 @@ h3 {
 .footer__list li {
   margin-top: 10px;
 }
-.footer .withicon {
+.footer .with-icon {
   display: flex;
   align-items: baseline;
 }
-.footer .withicon__link {
+.footer .with-icon > a {
   margin-left: 10px;
 }
-.footer .withicon > i {
+.footer .with-icon > i {
   width: 15px;
   color: white;
 }
