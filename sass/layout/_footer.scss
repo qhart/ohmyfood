@@ -26,10 +26,11 @@
         }
     }
 
-    .withicon {
+    .with-icon {
         display: flex;
         align-items: baseline;
-        &__link {
+
+        > a {
             margin-left: 10px;
         }
 

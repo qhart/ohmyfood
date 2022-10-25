@@ -21,14 +21,16 @@
             margin-left: 20px;
         }
 
-        .fa-stack {
-        }
-
         &__content {
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: space-between;
+            @for $i from 1 through 10 {
+                .dish-delay-#{$i} {
+                    animation-delay: #{$i * 80ms};
+                }
+            }
         }
         
         h2 {
@@ -39,11 +41,21 @@
         h3 {
             font-family: 'Roboto', sans-serif;
             margin-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+
+        .h3-underlined {
+            width: 50px;
+            height: 4px;
+            margin-top: 5px;
+            margin-left: 20px;
+            background-color: $colour-tertiary;
         }
 
         .purple-button {
-            margin-top: 30px;
-            margin-bottom: 50px;
+            margin-top: 40px;
+            margin-bottom: 60px;
         }
     }
 }
