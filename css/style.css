@@ -112,7 +112,7 @@ h3 {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0px 5px 10px -10px;
   cursor: pointer;
-  animation: dish-appear 1000ms ease-in-out;
+  animation: dish-appear 800ms ease-in-out;
   animation-fill-mode: backwards;
 }
 @keyframes dish-appear {
@@ -190,12 +190,14 @@ h3 {
 
 .heart-full {
   color: transparent;
-  transition: all 500ms;
+  opacity: 0;
 }
 .heart-full:hover {
-  background: linear-gradient(360deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(360deg, #FF79DA, #9356DC);
   background-clip: text;
+  opacity: 1;
   -webkit-background-clip: text;
+  transition: opacity 0.4s linear;
 }
 
 .header {
@@ -393,38 +395,35 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
 }
-.menu__wrapper__content .dish-delay-0 {
-  animation-delay: 0ms;
-}
 .menu__wrapper__content .dish-delay-1 {
-  animation-delay: 200ms;
+  animation-delay: 80ms;
 }
 .menu__wrapper__content .dish-delay-2 {
-  animation-delay: 400ms;
+  animation-delay: 160ms;
 }
 .menu__wrapper__content .dish-delay-3 {
-  animation-delay: 600ms;
+  animation-delay: 240ms;
 }
 .menu__wrapper__content .dish-delay-4 {
-  animation-delay: 800ms;
+  animation-delay: 320ms;
 }
 .menu__wrapper__content .dish-delay-5 {
-  animation-delay: 1000ms;
+  animation-delay: 400ms;
 }
 .menu__wrapper__content .dish-delay-6 {
-  animation-delay: 1200ms;
+  animation-delay: 480ms;
 }
 .menu__wrapper__content .dish-delay-7 {
-  animation-delay: 1400ms;
+  animation-delay: 560ms;
 }
 .menu__wrapper__content .dish-delay-8 {
-  animation-delay: 1600ms;
+  animation-delay: 640ms;
 }
 .menu__wrapper__content .dish-delay-9 {
-  animation-delay: 1800ms;
+  animation-delay: 720ms;
 }
 .menu__wrapper__content .dish-delay-10 {
-  animation-delay: 2000ms;
+  animation-delay: 800ms;
 }
 .menu__wrapper h2 {
   font-weight: normal;

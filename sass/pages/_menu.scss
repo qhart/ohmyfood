@@ -26,9 +26,9 @@
             align-items: center;
             flex-direction: column;
             justify-content: space-between;
-            @for $i from 0 through 10 {
+            @for $i from 1 through 10 {
                 .dish-delay-#{$i} {
-                    animation-delay: #{$i * 200ms};
+                    animation-delay: #{$i * 80ms};
                 }
             }
         }
