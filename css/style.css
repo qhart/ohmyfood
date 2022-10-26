@@ -105,7 +105,6 @@ h3 {
 
 .dish {
   display: flex;
-  justify-content: space-between;
   margin-top: 15px;
   width: 90%;
   background: white;
@@ -375,7 +374,15 @@ h3 {
   height: 180px;
   object-fit: cover;
 }
+@media screen and (min-width: 768px) {
+  .menu__img {
+    height: 250px;
+  }
+}
 .menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   margin-top: -30px;
   background: #F6F6F6;
@@ -389,11 +396,35 @@ h3 {
   margin-right: 20px;
   margin-left: 20px;
 }
+@media screen and (min-width: 768px) {
+  .menu__wrapper__header {
+    justify-content: center;
+  }
+  .menu__wrapper__header > .fa-stack {
+    margin-left: 20px;
+  }
+}
 .menu__wrapper__content {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .menu__wrapper__content {
+    flex-direction: row;
+  }
+}
+.menu__wrapper__content .menu-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .menu__wrapper__content .menu-column {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .menu__wrapper__content .dish-delay-1 {
   animation-delay: 80ms;
@@ -430,7 +461,6 @@ h3 {
 }
 .menu__wrapper h3 {
   font-family: "Roboto", sans-serif;
-  margin-left: 20px;
   margin-top: 40px;
   margin-bottom: 0;
 }
@@ -438,12 +468,20 @@ h3 {
   width: 50px;
   height: 4px;
   margin-top: 5px;
-  margin-left: 20px;
   background-color: #99E2D0;
 }
+.menu__wrapper h3, .menu__wrapper .h3-underlined {
+  margin-left: 20px;
+  align-self: flex-start;
+}
+@media screen and (min-width: 992px) {
+  .menu__wrapper h3, .menu__wrapper .h3-underlined {
+    margin-left: 0;
+    align-self: center;
+  }
+}
 .menu__wrapper .purple-button {
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin: 40px auto 60px auto;
 }
 
 .location {
