@@ -174,8 +174,11 @@ h3 {
 }
 .dish .check {
   opacity: 0;
+  overflow: hidden;
   transform: scaleX(0);
   transition: transform 600ms ease-in-out;
+  transition: width 500ms ease-in-out;
+  width: 0px;
 }
 .dish .check > i {
   transform: rotate(-360deg);
@@ -199,6 +202,58 @@ h3 {
   transition: opacity 0.4s linear;
 }
 
+.loading-spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  bottom: 0;
+  background-color: white;
+  animation-name: hide;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.loading-spinner:after {
+  content: "";
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 16px solid #FF79DA;
+  border-top: 16px solid #99E2D0;
+  background-color: #9356DC;
+  animation: spin 2s ease-in-out;
+}
+@media screen and (min-width: 992px) {
+  .loading-spinner:after {
+    width: 100px;
+    height: 100px;
+    top: 45%;
+    left: 45%;
+  }
+}
+
+@keyframes hide {
+  /*0% {
+      opacity: 0;
+  }*/
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .header {
   background: white;
   display: flex;
