@@ -228,6 +228,13 @@ h3 {
   padding: 20px;
   font-size: 14px;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
 .footer__title, .footer__list a {
   color: white;
 }
@@ -250,7 +257,7 @@ h3 {
   .footer__list {
     flex-direction: row;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
   }
 }
 .footer__list a {
