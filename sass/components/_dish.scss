@@ -82,8 +82,11 @@
 
     .check {
         opacity: 0;
+        overflow: hidden;
         transform: scaleX(0);
         transition: transform 600ms ease-in-out;
+        transition: width 500ms ease-in-out;
+        width: 0px;
         & > i {
             transform: rotate(-360deg);
             transition: transform 600ms ease-in-out;
