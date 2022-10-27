@@ -14,16 +14,22 @@
     &:after {
       content : "";
       position: fixed;
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       top: 50%;
       left: 50%;
-      @include display("desktop") {
+      margin-left: -40px;
+      margin-top: -40px;
+
+      @include display("tablet") {
         width: 100px;
         height: 100px;
-        top: 45%;
-        left: 45%;
+        top: 50%;
+        left: 50%;
+        margin-left: -60px;
+        margin-top: -60px;
       }
+
       border-radius: 50%;
       border: 16px solid $colour-secondary;
       border-top: 16px solid $colour-tertiary;
