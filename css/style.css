@@ -155,7 +155,7 @@ h3 {
   margin-top: 15px;
   margin-bottom: 0;
 }
-.dish__container__title, .dish__container__text > p {
+.dish__container__title, .dish__container .description {
   margin-left: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -171,6 +171,7 @@ h3 {
   margin-bottom: 15px;
 }
 .dish__container__text .price {
+  text-overflow: clip;
   margin-left: 20px;
   margin-right: 10px;
   font-weight: bold;
