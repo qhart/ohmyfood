@@ -12,12 +12,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: "Shrikhand", sans-serif;
 }
 
 h3 {
-  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .purple-button {
@@ -95,7 +97,7 @@ h3 {
   flex-direction: column;
   margin-left: 10px;
 }
-.cards__container__text > h4 {
+.cards__container__text > h3 {
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -164,21 +166,22 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-.dish__container__text > strong, .dish__container__text p {
+.dish__container__text > p {
   margin-top: 5px;
   margin-bottom: 15px;
 }
-.dish__container__text > strong {
+.dish__container__text .price {
   margin-left: 20px;
   margin-right: 10px;
+  font-weight: bold;
 }
 .dish .check {
   opacity: 0;
   overflow: hidden;
   transform: scaleX(0);
   transition: transform 600ms ease-in-out;
-  transition: width 500ms ease-in-out;
-  width: 0px;
+  transition: width 600ms ease-in-out;
+  width: 5px;
 }
 .dish .check > i {
   transform: rotate(-360deg);
@@ -271,6 +274,8 @@ h3 {
   margin: 10px auto;
   padding-top: 15px;
   font-size: 2em;
+  font-weight: bold;
+  font-family: "Shrikhand", sans-serif;
 }
 .header__back {
   position: absolute;
@@ -284,7 +289,7 @@ h3 {
 
 .footer {
   background: #353535;
-  padding: 20px;
+  padding: 25px;
   font-size: 14px;
 }
 @media screen and (min-width: 768px) {
@@ -299,6 +304,8 @@ h3 {
 }
 .footer__title {
   margin-top: 0;
+  font-weight: normal;
+  font-family: "Shrikhand", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .footer__title {
@@ -535,26 +542,29 @@ h3 {
 .menu__wrapper__content .dish-delay-10 {
   animation-delay: 800ms;
 }
-.menu__wrapper h2 {
+.menu__wrapper h1 {
+  font-size: 24px;
   font-weight: normal;
 }
-.menu__wrapper h3 {
+.menu__wrapper h2 {
   font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: normal;
   margin-top: 40px;
   margin-bottom: 0;
 }
-.menu__wrapper .h3-underlined {
+.menu__wrapper .h2-underlined {
   width: 50px;
   height: 4px;
   margin-top: 5px;
   background-color: #99E2D0;
 }
-.menu__wrapper h3, .menu__wrapper .h3-underlined {
+.menu__wrapper h2, .menu__wrapper .h2-underlined {
   margin-left: 20px;
   align-self: flex-start;
 }
 @media screen and (min-width: 992px) {
-  .menu__wrapper h3, .menu__wrapper .h3-underlined {
+  .menu__wrapper h2, .menu__wrapper .h2-underlined {
     margin-left: 0;
     align-self: center;
   }

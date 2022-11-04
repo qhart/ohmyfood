@@ -68,15 +68,19 @@
             justify-content: space-between;
             align-items: center;
 
-            & > strong, p {
+            & > p {
                 margin-top: 5px;
                 margin-bottom: 15px;
+
             }
 
-            & > strong {
+            .price {
                 margin-left: 20px;
                 margin-right: 10px;
+                font-weight: bold;
             }
+
+
         }
     }
 
@@ -85,8 +89,8 @@
         overflow: hidden;
         transform: scaleX(0);
         transition: transform 600ms ease-in-out;
-        transition: width 500ms ease-in-out;
-        width: 0px;
+        transition: width 600ms ease-in-out;
+        width: 5px;
         & > i {
             transform: rotate(-360deg);
             transition: transform 600ms ease-in-out;
