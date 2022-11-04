@@ -178,7 +178,7 @@ h3 {
   transform: scaleX(0);
   transition: transform 600ms ease-in-out;
   transition: width 600ms ease-in-out;
-  width: 0px;
+  width: 5px;
 }
 .dish .check > i {
   transform: rotate(-360deg);
