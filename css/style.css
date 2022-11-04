@@ -289,7 +289,7 @@ h3 {
 
 .footer {
   background: #353535;
-  padding: 20px;
+  padding: 25px;
   font-size: 14px;
 }
 @media screen and (min-width: 768px) {
@@ -304,6 +304,8 @@ h3 {
 }
 .footer__title {
   margin-top: 0;
+  font-weight: normal;
+  font-family: "Shrikhand", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .footer__title {

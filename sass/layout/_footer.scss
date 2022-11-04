@@ -1,6 +1,6 @@
 .footer {
     background: $colour-dark-grey;
-    padding: 20px;
+    padding: 25px;
     font-size: 14px;
 
     @include display("tablet") {
@@ -16,6 +16,8 @@
 
     &__title {
         margin-top: 0;
+        font-weight: normal;
+        font-family: 'Shrikhand', sans-serif;
         @include display("tablet") {
             display: flex;
             justify-content: center;
